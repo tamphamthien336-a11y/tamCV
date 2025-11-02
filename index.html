@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Phạm Thiện Tâm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f3f3f3;
+            color: #333;
+        }
+
+        /* --- KHUNG CHÍNH --- */
+        .contain {
+            width: 1000px;
+            display: flex;
+            margin: 40px auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            background: #fff;
+            transition: 0.3s;
+        }
+
+        /* --- CỘT TRÁI (MÀU TÍM GIỮ NGUYÊN) --- */
+        .left {
+            width: 35%;
+            background: linear-gradient(180deg, #7f5af0, #5f3dc4);
+            color: #fff;
+            padding-bottom: 40px;
+        }
+
+        .avata {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .avata img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.4s ease;
+        }
+
+        .avata img:hover {
+            transform: scale(1.05);
+        }
+
+        /* --- TÊN VÀ NGHỀ NGHIỆP DƯỚI ẢNH --- */
+        .profile-name {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .profile-name h1 {
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .profile-name h2 {
+            font-size: 16px;
+            font-weight: 400;
+            color: #e0e0e0;
+        }
+
+        /* --- LIÊN LẠC, KỸ NĂNG, DỰ ÁN --- */
+        .special {
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        .special h1,
+        .special h2,
+        .special h3 {
+            margin-top: 20px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .special p,
+        .special li,
+        .special a {
+            font-size: 14px;
+            color: #f3f3f3;
+        }
+
+        .special a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .special a:hover {
+            color: #ffd43b;
+        }
+
+        .special ul {
+            margin-left: 25px;
+            list-style: circle;
+        }
+
+        .box {
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* --- CỘT PHẢI --- */
+        .right {
+            width: 65%;
+            background-color: #fff;
+            color: #222;
+        }
+
+        .skin {
+            margin: 40px;
+        }
+
+        .skin h2 {
+            margin: 20px 0 10px 0;
+            font-size: 20px;
+            color: #333;
+            border-left: 4px solid #7f5af0;
+            padding-left: 10px;
+        }
+
+        .skin p {
+            line-height: 1.7;
+            text-align: justify;
+            font-size: 15px;
+            color: #555;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 1024px) {
+            .contain {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contain {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            .left {
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            .special {
+                margin: 20px;
+                text-align: left;
+            }
+
+            .skin {
+                margin: 20px;
+            }
+
+            .skin h2 {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .avata img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .profile-name h1 {
+                font-size: 18px;
+            }
+
+            .profile-name h2 {
+                font-size: 14px;
+            }
+
+            .skin h2 {
+                font-size: 17px;
+            }
+
+            .skin p {
+                font-size: 14px;
+            }
+
+            .special h2,
+            .special h3 {
+                font-size: 16px;
+            }
+
+            .special p,
+            .special li {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <!-- CỘT TRÁI -->
+        <div class="left">
+            <div class="avata">
+                <img src="./assets/image/z7167416073050_07f08842f65d3b26a0f3961eb1cf0b2c.jpg" alt="Phạm Thiện Tâm">
+            </div>
+            <div class="profile-name">
+                <h1>Phạm Thiện Tâm</h1>
+                <h2>Lập Trình Viên</h2>
+            </div>
+
+            <div class="special">
+                <h1 class="box">Liên lạc</h1>
+                <h2>Số điện thoại</h2>
+                <p>0382721073</p>
+                <h2>Email</h2>
+                <p>tamphamthien336@gmail.com</p>
+                <h3>Ngày sinh</h3>
+                <p>07/11/2004</p>
+                <h3>Địa chỉ</h3>
+                <p>107/1 Võ Văn Kiệt, Phường Khánh Xuân, Đắk Lắk</p>
+
+                <h2 class="box">Kỹ năng</h2>
+                <ul>
+                    <li>Kiến thức cơ bản về HTML, CSS, C++, C#</li>
+                    <li>Quản lý thời gian hiệu quả</li>
+                    <li>Lập luận logic</li>
+                    <li>Tư duy sáng tạo</li>
+                </ul>
+
+                <h2 class="box">Dự án</h2>
+                <a href="https://vgkin.github.io/V-ngg/" target="_blank">Xem dự án</a>
+            </div>
+        </div>
+
+        <!-- CỘT PHẢI -->
+        <div class="right">
+            <div class="skin">
+                <h2>Mục tiêu nghề nghiệp</h2>
+                <p>Là một người mới chưa có nhiều kinh nghiệm lập trình nhưng có ý chí cầu tiến, mong muốn được học hỏi
+                    thêm về lập trình và phát triển bản thân. Luôn sẵn sàng tiếp thu kiến thức mới, làm việc chăm chỉ để
+                    đạt được mục tiêu đề ra.</p>
+
+                <h2>Kỹ năng xử lý</h2>
+                <p>Nhanh nhạy trong việc xử lý tình huống, rèn luyện kỹ năng mỗi ngày để phát triển tốt hơn. Luôn học
+                    hỏi, tìm tòi và tư duy logic để thích ứng trong các tình huống khác nhau.</p>
+
+                <h2>Định hướng tương lai</h2>
+                <p>Mong muốn theo đuổi và học hỏi về lập trình game, dù chưa được đào tạo chuyên sâu nhưng vẫn nỗ lực tự
+                    học và tìm hiểu để theo đuổi đam mê.</p>
+
+                <h2>Nguyện vọng</h2>
+                <p>Mong muốn được làm việc trong môi trường giúp học hỏi thêm kiến thức, sẵn sàng cống hiến thời gian và
+                    công sức để phát triển bản thân, không đặt nặng vấn đề vật chất mà chú trọng vào kinh nghiệm và kỹ
+                    năng.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
